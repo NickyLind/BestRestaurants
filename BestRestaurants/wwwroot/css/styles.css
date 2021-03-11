@@ -1,0 +1,31 @@
+.container {
+  background-color: rgba(62, 2, 2, 0.981);
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+body {
+  background-image: url(https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_center,h_465,q_60,w_420/v1/clients/sonomavalley/Buena_Vista_Winery_76722f70-afe6-440f-a8e0-37f994268834.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+
+}
+
+h1, h2, h4, h2, h3 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  color: whitesmoke;
+}
+
+a {
+  color: rgba(255, 215, 198, 0.66);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+p, li {
+  color: goldenrod;
+}
+label{
+  color: rgb(214, 94, 38)
+}
