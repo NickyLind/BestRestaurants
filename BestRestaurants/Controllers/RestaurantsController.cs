@@ -56,9 +56,10 @@ namespace BestRestaurants.Controllers
       if (CuisineId != 0)
       {
         _db.CuisineRestaurant.Add(new CuisineRestaurant() { CuisineId = CuisineId, RestaurantId = restaurant.RestaurantId});
-      }
+      
       _db.Entry(restaurant).State = EntityState.Modified;
       _db.SaveChanges();
+      }
       return RedirectToAction("Index");
     }
     public ActionResult Delete(int id)
@@ -87,6 +88,13 @@ namespace BestRestaurants.Controllers
       {
         _db.CuisineRestaurant.Add(new CuisineRestaurant() { CuisineId = CuisineId, RestaurantId = restaurant.RestaurantId });
       }
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
+    public ActionResult DeleteCuisine(int joinId)
+    {
+      var joinEntry = _db.CuisineRestaurant.FirstOrDefault(entry => entry.CuisineRestaurantId == joinId);
+      _db.CuisineRestaurant.Remove(joinEntry);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }

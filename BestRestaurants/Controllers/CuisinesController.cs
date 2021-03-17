@@ -42,6 +42,12 @@ namespace BestRestaurants.Controllers
     public ActionResult Edit(int id)
     {
       var thisCuisine = _db.Cuisines.FirstOrDefault(cuisine => cuisine.CuisineId == id);
+      var selectedRestaurants = _db.CuisineRestaurant
+      .Where(cuisineRestaurant => cuisineRestaurant.CuisineId == id)
+      .Select(restaurant => restaurant.RestaurantId).ToList();
+      ViewBag.Restaurants = _db.Restaurants
+      .Where(restaurant => !selectedRestaurants.Contains(restaurant.RestaurantId))
+      .Select(restaurant => restaurant);
       return View(thisCuisine);
     }
     [HttpPost]
@@ -67,7 +73,7 @@ namespace BestRestaurants.Controllers
       return RedirectToAction("Index");
     }
     [HttpPost]
-    public ActionResult DeleteCuisine(int joinId)
+    public ActionResult DeleteRestaurant(int joinId)
     {
       var joinEntry = _db.CuisineRestaurant.FirstOrDefault(entry => entry.CuisineRestaurantId == joinId);
       _db.CuisineRestaurant.Remove(joinEntry);
