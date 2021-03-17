@@ -15,7 +15,7 @@
   @foreach(var join in @Model.JoinEntities)
   {
     <li>@Html.ActionLink($"{join.Restaurant.Name}", "Details", "Restaurants", new {id = join.RestaurantId})
-      @using (Html.BeginForm("DeleteRestaurant", "Cuisines"))
+      @using (Html.BeginForm("DeleteRestaurant", "Cuisine"))
     {
       @Html.Hidden("joinId", @join.CuisineRestaurantId)
       <input type="submit" value="Delete" />

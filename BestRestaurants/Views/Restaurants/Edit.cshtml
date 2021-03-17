@@ -2,22 +2,22 @@
   Layout = "_Layout";
 }
 
-@model BestRestaurants.Models.Restaurant
+@model BestRestaurants.Models.CuisineRestaurant
 
 <h2>Edit</h2>
 
-<h4>Edit this restaurant: @Html.DisplayFor(model => model.Name)</h4>
+<h4>Edit this restaurant: @Html.DisplayFor(model => model.Restaurant.Name)</h4>
 
 @using (Html.BeginForm())
 {
   @Html.HiddenFor(model => model.RestaurantId)
-
-  @Html.LabelFor(model => model.Name)
-  @Html.EditorFor(model => model.Name)
-  @Html.LabelFor(model => model.Address)
-  @Html.EditorFor(model => model.Address)
-  @Html.LabelFor(model => model.PhoneNumber)
-  @Html.EditorFor(model => model.PhoneNumber)
+  @Html.Hidden("joinId", Model.CuisineRestaurantId)
+  @Html.LabelFor(model => model.Restaurant.Name)
+  @Html.EditorFor(model => model.Restaurant.Name)
+  @Html.LabelFor(model => model.Restaurant.Address)
+  @Html.EditorFor(model => model.Restaurant.Address)
+  @Html.LabelFor(model => model.Restaurant.PhoneNumber)
+  @Html.EditorFor(model => model.Restaurant.PhoneNumber)
 
   @Html.Label("Select Cuisine")
   @Html.DropDownList("CuisineId")

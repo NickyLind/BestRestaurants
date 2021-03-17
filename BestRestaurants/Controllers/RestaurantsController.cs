@@ -51,15 +51,17 @@ namespace BestRestaurants.Controllers
       return View(thisRestaurant);
     }
     [HttpPost]
-    public ActionResult Edit(Restaurant restaurant, int CuisineId)
+    public ActionResult Edit(Restaurant restaurant, int CuisineId, int joinId)
     {
       if (CuisineId != 0)
       {
+        var joinEntry = _db.CuisineRestaurant.FirstOrDefault(entry => entry.CuisineRestaurantId == joinId);
+        _db.CuisineRestaurant.Remove(joinEntry);    
         _db.CuisineRestaurant.Add(new CuisineRestaurant() { CuisineId = CuisineId, RestaurantId = restaurant.RestaurantId});
-      
+      }
       _db.Entry(restaurant).State = EntityState.Modified;
       _db.SaveChanges();
-      }
+      
       return RedirectToAction("Index");
     }
     public ActionResult Delete(int id)
