@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "jGD/gU/d9i3oUFL6oXLcG4HJJ6XZwz9y6w0ochI2aywurqJPvMEvUgsGeEz2tymNeSM6nT9ZXzONILi+noJhkw==",
+  "dgSpecHash": "tCTJLJaNEEonNfaBI97wWodYAHEBmpdvXcH9sxHO7kPlrazcbHl45DA2yABwfI0ejmGbfudN7ZGRfbB7R1UUpA==",
   "success": true,
   "projectFilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants.csproj",
   "expectedPackageFiles": [
     "/Users/Nick/.nuget/packages/castle.core/4.4.1/castle.core.4.4.1.nupkg.sha512",
+    "/Users/Nick/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/Nick/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/Nick/.nuget/packages/microsoft.entityframeworkcore/5.0.0/microsoft.entityframeworkcore.5.0.0.nupkg.sha512",
     "/Users/Nick/.nuget/packages/microsoft.entityframeworkcore.abstractions/5.0.0/microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512",
     "/Users/Nick/.nuget/packages/microsoft.entityframeworkcore.analyzers/5.0.0/microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
+    "/Users/Nick/.nuget/packages/microsoft.entityframeworkcore.design/5.0.0/microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
     "/Users/Nick/.nuget/packages/microsoft.entityframeworkcore.proxies/5.0.0/microsoft.entityframeworkcore.proxies.5.0.0.nupkg.sha512",
     "/Users/Nick/.nuget/packages/microsoft.entityframeworkcore.relational/5.0.0/microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
     "/Users/Nick/.nuget/packages/microsoft.extensions.caching.abstractions/5.0.0/microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",

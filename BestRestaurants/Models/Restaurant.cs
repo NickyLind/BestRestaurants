@@ -9,9 +9,11 @@ namespace BestRestaurants.Models
     public string Address { get; set; }
     public int CuisineId { get; set; }
     public virtual Cuisine Cuisine { get; set; }
+    public virtual ICollection<CuisineRestaurant> JoinEntities { get; }
     public virtual ICollection<Review> Reviews { get; set;}
     public Restaurant()
     {
+      this.JoinEntities = new HashSet<CuisineRestaurant>();
       this.Reviews = new HashSet<Review>();
     }
   }

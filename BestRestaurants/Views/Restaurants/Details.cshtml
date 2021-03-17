@@ -1,8 +1,6 @@
 @{
   Layout = "_Layout";
 }
-
-@using BestRestaurants.Models
 @model BestRestaurants.Models.Restaurant
 
 <h2>Restaurant Details</h2>
@@ -10,6 +8,13 @@
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3><br>
 <h3>@Html.DisplayNameFor(model => model.Address): @Html.DisplayFor(model => model.Address)</h3><br>
 <h3>@Html.DisplayNameFor(model => model.PhoneNumber): @Html.DisplayFor(model => model.PhoneNumber)</h3><br>
+<ul>
+  @foreach(var join in Model.JoinEntities)
+  {
+    <li>@join.Cuisine.Name</li>
+  }
+</ul>
+<hr />
 @foreach (var review in @Model.Reviews)
 {
   <li>Review: @review.Description</li>
@@ -19,4 +24,5 @@
 <p>@Html.ActionLink("Back to restaurant list", "Index")</p>
 <p>@Html.ActionLink("Edit restaurant", "Edit", new { id = Model.RestaurantId})</p>
 <p>@Html.ActionLink("Remove restaurant", "Delete", new {id = Model.RestaurantId})
+<p>@Html.ActionLink("Add a cuisine", "AddCuisine", new { id = Model.RestaurantId })</p>
 <p>@Html.ActionLink("Leave a review", "Create", "Review")

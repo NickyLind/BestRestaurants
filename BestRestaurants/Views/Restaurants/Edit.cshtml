@@ -19,9 +19,9 @@
   @Html.LabelFor(model => model.PhoneNumber)
   @Html.EditorFor(model => model.PhoneNumber)
 
-  @Html.LabelFor(model => model.Cuisine)
+  @Html.Label("Select Cuisine")
   @Html.DropDownList("CuisineId")
 
   <input type="submit" value="Save" />
 }
-<p></p>@Html.ActionLink("Back to restaurant list", "Index")</p>
+<p>@Html.ActionLink("Back to restaurant list", "Index")</p>

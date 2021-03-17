@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/BestRestaurants.csproj",
+  "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15603,63 +15603,88 @@
   "RootNamespace": "BestRestaurants",
   "Documents": [
     {
-      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/Views/Restaurants/Edit.cshtml",
-      "TargetPath": "Views\\Restaurants\\Edit.cshtml",
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Review/Edit.cshtml",
+      "TargetPath": "Views\\Review\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/Views/Cuisine/Create.cshtml",
-      "TargetPath": "Views\\Cuisine\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/Views/Restaurants/Details.cshtml",
-      "TargetPath": "Views\\Restaurants\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/Views/Restaurants/Delete.cshtml",
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Restaurants/Delete.cshtml",
       "TargetPath": "Views\\Restaurants\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/Views/Cuisine/Delete.cshtml",
-      "TargetPath": "Views\\Cuisine\\Delete.cshtml",
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Cuisine/Create.cshtml",
+      "TargetPath": "Views\\Cuisine\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/Views/Cuisine/Details.cshtml",
-      "TargetPath": "Views\\Cuisine\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/Views/Cuisine/Index.cshtml",
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Cuisine/Index.cshtml",
       "TargetPath": "Views\\Cuisine\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Restaurants/Details.cshtml",
+      "TargetPath": "Views\\Restaurants\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/Views/Restaurants/Create.cshtml",
-      "TargetPath": "Views\\Restaurants\\Create.cshtml",
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Review/Details.cshtml",
+      "TargetPath": "Views\\Review\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Review/Create.cshtml",
+      "TargetPath": "Views\\Review\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/Views/Restaurants/Index.cshtml",
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Cuisine/Edit.cshtml",
+      "TargetPath": "Views\\Cuisine\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Cuisine/Details.cshtml",
+      "TargetPath": "Views\\Cuisine\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Restaurants/Index.cshtml",
       "TargetPath": "Views\\Restaurants\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/BestRestaurants/Views/Cuisine/Edit.cshtml",
-      "TargetPath": "Views\\Cuisine\\Edit.cshtml",
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Restaurants/AddCuisine.cshtml",
+      "TargetPath": "Views\\Restaurants\\AddCuisine.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Review/Delete.cshtml",
+      "TargetPath": "Views\\Review\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Restaurants/Create.cshtml",
+      "TargetPath": "Views\\Restaurants\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Restaurants/Edit.cshtml",
+      "TargetPath": "Views\\Restaurants\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Nick/Desktop/Epicodus/CSE-week-10/BestRestaurants.Solution/BestRestaurants/Views/Cuisine/Delete.cshtml",
+      "TargetPath": "Views\\Cuisine\\Delete.cshtml",
       "FileKind": "mvc"
     }
   ],

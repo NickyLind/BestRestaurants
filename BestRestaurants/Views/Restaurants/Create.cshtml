@@ -14,7 +14,7 @@
   @Html.LabelFor(model => model.PhoneNumber)
   @Html.TextBoxFor(model => model.PhoneNumber)
 
-  @Html.LabelFor(model => model.Cuisine)
+  @Html.Label("Select cuisine")
   @Html.DropDownList("CuisineId")
 
   <input type="submit" value="Add new restaurant" class="btn btn-danger" />

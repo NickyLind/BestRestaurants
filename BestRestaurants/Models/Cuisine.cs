@@ -6,10 +6,10 @@ namespace BestRestaurants.Models
   {
     public int CuisineId { get; set; }
     public string Name { get; set; }
-    public virtual ICollection<Restaurant> Restaurants { get; set;}
+    public virtual ICollection<CuisineRestaurant> JoinEntities { get; set;}
     public Cuisine()
     {
-      this.Restaurants = new HashSet<Restaurant>();
+      this.JoinEntities = new HashSet<CuisineRestaurant>();
     }
   }
 }
