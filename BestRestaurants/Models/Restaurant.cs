@@ -17,9 +17,5 @@ namespace BestRestaurants.Models
       this.JoinEntities = new HashSet<CuisineRestaurant>();
       this.Reviews = new HashSet<Review>();
     }
-    public bool HasNoEntities() 
-    {
-      return (JoinEntities.Count == 0);
-    }
   }
 }

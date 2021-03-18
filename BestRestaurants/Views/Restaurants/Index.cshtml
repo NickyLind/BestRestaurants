@@ -22,14 +22,9 @@
       {
         <text> @cuisine.Cuisine.Name |</text>   
       }
-      @* else
-      {
-        <text>This restaurant has no cuisine listed</text>
-      } *@
     }
-    @* @if (DBNull.Value.Equals(restaurant.JoinEntities)) *@
     @* if a restaurant has no JoinEntities display the text *@
-    @if (restaurant.HasNoEntities() == true)
+    @if (restaurant.JoinEntities.Count == 0)
     {
       <text>This restaurant has no cuisine listed</text>
     }
