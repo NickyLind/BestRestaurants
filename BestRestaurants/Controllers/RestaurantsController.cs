@@ -17,8 +17,11 @@ namespace BestRestaurants.Controllers
     }
     public ActionResult Index()
     {
-
-      return View(_db.CuisineRestaurant.ToList());
+      var thisRestaurant = _db.Restaurants
+      .Include(rest => rest.JoinEntities)
+      .ThenInclude(join => join.Cuisine);
+      return View(thisRestaurant.ToList());
+      // return View(_db.CuisineRestaurant.ToList());
     }
     public ActionResult Create()
     {
