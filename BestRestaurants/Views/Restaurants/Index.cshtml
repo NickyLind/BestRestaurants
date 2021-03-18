@@ -15,7 +15,25 @@
 <ul>
 @foreach (var restaurant in Model)
 {
-  <li>@Html.ActionLink($"{restaurant.Name}", "Details", new {id = restaurant.RestaurantId}) : @foreach(var cuisine in restaurant.JoinEntities){ <text> @cuisine.Cuisine.Name |</text> } </li>
+  <li>@Html.ActionLink($"{restaurant.Name}", "Details", new {id = restaurant.RestaurantId}) : 
+    @foreach(var cuisine in restaurant.JoinEntities)
+    { 
+      if (cuisine.Cuisine.Name != null)
+      {
+        <text> @cuisine.Cuisine.Name |</text>   
+      }
+      @* else
+      {
+        <text>This restaurant has no cuisine listed</text>
+      } *@
+    }
+    @* @if (DBNull.Value.Equals(restaurant.JoinEntities)) *@
+    @* if a restaurant has no JoinEntities display the text *@
+    @if (restaurant.HasNoEntities() == true)
+    {
+      <text>This restaurant has no cuisine listed</text>
+    }
+  </li>
 }
 </ul>
 <p>@Html.ActionLink("Add new restaurant", "Create")</p>
